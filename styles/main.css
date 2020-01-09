@@ -229,7 +229,7 @@ textarea {
     font-size: 14px;
     line-height: 150%; }
     .process__text:first-of-type {
-      margin-bottom: 32px; }
+      margin-bottom: 16px; }
 
 * {
   -webkit-box-sizing: border-box;
