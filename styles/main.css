@@ -551,7 +551,7 @@ textarea {
     width: 17.9px;
     border: 3px solid #fcc304;
     top: 15%;
-    left: 75%; }
+    left: 40%; }
   .rectangle:nth-child(3) {
     position: absolute;
     border-radius: 500px;
@@ -560,7 +560,7 @@ textarea {
             transform: rotate(30deg);
     height: 53.69px;
     width: 21.22px;
-    border: 5px solid #bc04fc;
+    border: 3px solid #bc04fc;
     left: 90%; }
   .rectangle:nth-of-type(4) {
     position: absolute;
@@ -568,65 +568,66 @@ textarea {
     opacity: 0.5;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    height: 45.28px;
-    width: 17.9px;
-    border: 3px solid #fcc304;
-    top: 12%; }
+    height: 143.04px;
+    width: 56.54px;
+    border: 3px solid #03d542;
+    top: 25%;
+    left: 78%; }
   .rectangle:nth-of-type(5) {
     position: absolute;
     border-radius: 500px;
     opacity: 0.5;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    height: 45.28px;
-    width: 17.9px;
-    border: 3px solid #fcc304;
-    top: 12%;
-    left: 40%; }
+    height: 67.36px;
+    width: 26.63px;
+    border: 3px solid #56CCF2;
+    top: 55%;
+    left: 15%; }
   .rectangle:nth-of-type(6) {
     position: absolute;
     border-radius: 500px;
     opacity: 0.5;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    height: 45.28px;
-    width: 17.9px;
-    border: 3px solid #fcc304;
-    top: 12%;
-    left: 40%; }
+    height: 143.04px;
+    width: 56.54px;
+    border: 3px solid #03d542;
+    top: 50%;
+    left: 25%; }
   .rectangle:nth-of-type(7) {
     position: absolute;
     border-radius: 500px;
     opacity: 0.5;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    height: 45.28px;
-    width: 17.9px;
-    border: 3px solid #fcc304;
-    top: 12%;
-    left: 40%; }
+    height: 85.61px;
+    width: 33.84px;
+    border: 3px solid #ff9c8e;
+    top: 55%;
+    left: 72%; }
   .rectangle:nth-of-type(8) {
     position: absolute;
     border-radius: 500px;
     opacity: 0.5;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    height: 45.28px;
-    width: 17.9px;
+    height: 86.41px;
+    width: 34.16px;
     border: 3px solid #fcc304;
-    top: 12%;
-    left: 40%; }
+    top: 50%;
+    left: 90%; }
   .rectangle:nth-of-type(9) {
     position: absolute;
     border-radius: 500px;
     opacity: 0.5;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    height: 45.28px;
-    width: 17.9px;
-    border: 3px solid #fcc304;
-    top: 12%;
-    left: 40%; }
+    height: 93.54px;
+    width: 36.98px;
+    border: 3px solid #bc04fc;
+    top: 70%;
+    left: 18%; }
   .rectangle:nth-of-type(10) {
     position: absolute;
     border-radius: 500px;
@@ -636,7 +637,7 @@ textarea {
     height: 45.28px;
     width: 17.9px;
     border: 3px solid #fcc304;
-    top: 12%;
+    top: 75%;
     left: 40%; }
   .rectangle:nth-of-type(11) {
     position: absolute;
@@ -646,20 +647,20 @@ textarea {
             transform: rotate(30deg);
     height: 45.28px;
     width: 17.9px;
-    border: 3px solid #fcc304;
-    top: 12%;
-    left: 40%; }
+    border: 3px solid #bc04fc;
+    top: 80%;
+    left: 60%; }
   .rectangle:nth-of-type(12) {
     position: absolute;
     border-radius: 500px;
     opacity: 0.5;
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
-    height: 45.28px;
-    width: 17.9px;
-    border: 3px solid #fcc304;
-    top: 12%;
-    left: 40%; }
+    height: 153.61px;
+    width: 60.72px;
+    border: 3px solid #56ccf2;
+    top: 65%;
+    left: 80%; }
 
 * {
   -webkit-box-sizing: border-box;
