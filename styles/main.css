@@ -72,6 +72,13 @@ textarea {
         margin-top: 8px;
         width: 100%;
         background-color: #ff9c8e; }
+  .nav--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .epigraph {
   margin-top: 168px;
@@ -100,6 +107,8 @@ textarea {
   font-weight: 600;
   font-family: inherit;
   line-height: 22px; }
+  .btn--contact {
+    width: 226px; }
 
 .slider {
   display: -webkit-box;
@@ -199,11 +208,12 @@ textarea {
     font-size: 20px;
     line-height: 140%;
     margin: 40px 0 16px; }
-  .heading--process, .heading--features, .heading--testimonials {
+  .heading--process, .heading--features, .heading--testimonials, .heading--contact {
     text-align: start;
     font-size: 32px;
     line-height: 150%;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    font-weight: 600; }
   .heading--features {
     color: #fff;
     font-weight: 600; }
@@ -212,6 +222,8 @@ textarea {
   .heading--vision {
     font-weight: 600;
     margin-bottom: 24px; }
+  .heading--contact {
+    color: #fff; }
 
 .section {
   padding: 0 20px;
@@ -355,7 +367,8 @@ textarea {
     -ms-flex-item-align: end;
         align-self: flex-end; }
   .features__img {
-    display: block; }
+    display: block;
+    width: 42vw; }
   .features__span {
     display: block;
     color: #fff;
@@ -662,6 +675,108 @@ textarea {
     top: 65%;
     left: 80%; }
 
+.footer {
+  background: #008aff;
+  border-radius: 0 150px 0 0;
+  height: 867px;
+  padding: 180px 0 62px; }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 121px; }
+  .contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 460px; }
+  .contact__input {
+    width: 100%;
+    margin-bottom: 66px;
+    padding: 0 0 16px;
+    background: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff; }
+    .contact__input:focus {
+      border-bottom: 2px solid white; }
+    .contact__input::-webkit-input-placeholder {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      opacity: 0.7; }
+    .contact__input::-moz-placeholder {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      opacity: 0.7; }
+    .contact__input:-ms-input-placeholder {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      opacity: 0.7; }
+    .contact__input::-ms-input-placeholder {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      opacity: 0.7; }
+    .contact__input::placeholder {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      opacity: 0.7; }
+    .contact__input:last-of-type {
+      margin-bottom: 80px; }
+  .contact__info {
+    width: 362px; }
+  .contact__span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    color: #fff;
+    opacity: 0.5; }
+    .contact__span:last-of-type {
+      margin-bottom: 16px; }
+  .contact__text {
+    margin-bottom: 48px;
+    font-size: 24px;
+    color: #fff; }
+  .contact__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contact__img {
+    margin-right: 45.34px; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -670,5 +785,10 @@ body {
   background-color: #f2f9ff;
   font-family: "Poppins", sans-serif;
   font-size: 13px; }
+
+input,
+button,
+a {
+  outline: none; }
 
 /*# sourceMappingURL=main.css.map */
