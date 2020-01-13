@@ -18,7 +18,7 @@ textarea {
 
 .header {
   position: relative;
-  height: 800px;
+  height: 100vh;
   padding-top: 52px;
   background-color: #008aff;
   border-radius: 0 0 0 200px; }
