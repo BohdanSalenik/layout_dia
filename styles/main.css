@@ -27,14 +27,14 @@ textarea {
     position: relative;
     width: 20px;
     height: 2px;
-    background-color: red;
+    background-color: #ff9c8e;
     margin-bottom: 15px; }
     .header__btn::before {
       content: "";
       position: absolute;
       width: 20px;
       height: 2px;
-      background-color: red;
+      background-color: #ff9c8e;
       bottom: 5px;
       left: 0; }
     .header__btn::after {
@@ -42,7 +42,7 @@ textarea {
       position: absolute;
       width: 20px;
       height: 2px;
-      background-color: red;
+      background-color: #ff9c8e;
       top: 5px;
       left: 0; }
     .header__btn--active {
