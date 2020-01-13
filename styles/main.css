@@ -839,8 +839,7 @@ textarea {
 @media screen and (max-width: 960px) {
   .wrapper {
     width: 90%;
-    margin: 0 auto;
-    position: relative; }
+    margin: 0 auto; }
   .header__btn {
     position: absolute;
     display: block;
@@ -853,8 +852,6 @@ textarea {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -webkit-transform: translate(-16px, -51px);
-            transform: translate(-16px, -51px);
     background-color: black;
     top: 0;
     left: 0;
@@ -868,7 +865,8 @@ textarea {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      width: auto; }
     .nav__item {
       margin-bottom: 20px; }
       .nav__item:focus::after {
