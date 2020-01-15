@@ -28,14 +28,14 @@ textarea {
     display: flex; }
   .header__link {
     margin-right: 64px; }
-  .header__btn {
+  .header__button {
     display: none;
     position: relative;
     width: 20px;
     height: 2px;
     background-color: #ff9c8e;
     margin-bottom: 15px; }
-    .header__btn::before {
+    .header__button::before {
       content: "";
       position: absolute;
       width: 20px;
@@ -43,7 +43,7 @@ textarea {
       background-color: #ff9c8e;
       bottom: 5px;
       left: 0; }
-    .header__btn::after {
+    .header__button::after {
       content: "";
       position: absolute;
       width: 20px;
@@ -51,9 +51,9 @@ textarea {
       background-color: #ff9c8e;
       top: 5px;
       left: 0; }
-    .header__btn--active {
+    .header__button--active {
       background-color: transparent; }
-      .header__btn--active::before {
+      .header__button--active::before {
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
         top: 0;
@@ -61,7 +61,7 @@ textarea {
         transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
-      .header__btn--active::after {
+      .header__button--active::after {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
         top: 0;
@@ -71,7 +71,7 @@ textarea {
         transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
 
 @media screen and (max-width: 960px) {
-  .header__btn {
+  .header__button {
     position: absolute;
     top: 50px;
     display: block;
@@ -257,7 +257,7 @@ textarea {
     .epigraph__title {
       font-size: 50px; } }
 
-.btn {
+.button {
   padding: 13px 69px;
   border-radius: 64px;
   border: none;
@@ -267,9 +267,9 @@ textarea {
   font-weight: 600;
   font-family: inherit;
   line-height: 22px; }
-  .btn--contact {
+  .button--contact {
     width: 226px; }
-  .btn:hover {
+  .button:hover {
     -webkit-box-shadow: 0 0 15px aqua, inset 0 1px 8px -2px #fff;
             box-shadow: 0 0 15px aqua, inset 0 1px 8px -2px #fff; }
 
@@ -298,7 +298,7 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 0 48px 48px; }
-  .slider__btn {
+  .slider__button {
     width: 32px;
     height: 32px;
     background-image: url(../images/slider/arrow-left.svg);
@@ -307,10 +307,10 @@ textarea {
     border-radius: 50%;
     border: none;
     margin-right: 8px; }
-    .slider__btn--right {
+    .slider__button--right {
       background-image: url(../images/slider/arrow-right.svg);
       margin-right: 0; }
-    .slider__btn:hover {
+    .slider__button:hover {
       -webkit-box-shadow: 0 0 15px #fff, inset 0 1px 8px -2px #fff;
               box-shadow: 0 0 15px #fff, inset 0 1px 8px -2px #fff; }
   .slider__description {
@@ -367,7 +367,14 @@ textarea {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+    .what-do__item:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .what-do__text {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
@@ -378,7 +385,10 @@ textarea {
   .what-do {
     grid-template-columns: repeat(1, 1fr); }
     .what-do__text {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+    .what-do__item:hover {
+      -webkit-transform: none;
+              transform: none; } }
 
 .heading {
   color: #253757;
@@ -530,7 +540,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .boxes__btn {
+  .boxes__button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -539,11 +549,11 @@ textarea {
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 16px; }
-    .boxes__btn--yellow {
+    .boxes__button--yellow {
       background-color: #fcc91d; }
-    .boxes__btn--green {
+    .boxes__button--green {
       background-color: #15d850; }
-    .boxes__btn--red {
+    .boxes__button--red {
       background-color: #f36363; }
   .boxes__link {
     color: #334563;
@@ -672,7 +682,14 @@ textarea {
   background-color: #fff;
   border-radius: 24px;
   -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
-          box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03); }
+          box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear; }
+  .card:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
   .card-img__wrapper {
     position: relative;
     margin-bottom: 82px; }
@@ -765,6 +782,11 @@ textarea {
     font-weight: 600;
     text-transform: uppercase;
     color: #c0cdd7; }
+
+@media screen and (max-width: 960px) {
+  .card:hover {
+    -webkit-transform: none;
+            transform: none; } }
 
 .vision {
   display: -webkit-box;
@@ -1022,6 +1044,9 @@ textarea {
             align-items: center; }
   .contact__img {
     margin-right: 45.34px; }
+    .contact__img:hover {
+      -webkit-filter: drop-shadow(0 -5px 9px aqua);
+              filter: drop-shadow(0 -5px 9px aqua); }
   .contact__link {
     text-decoration: none;
     color: inherit; }
@@ -1051,7 +1076,8 @@ textarea {
               align-items: center;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
-              order: 1; }
+              order: 1;
+      padding-top: 60px; }
     .contact__img {
       margin-right: 0; }
     .contact__icons {
@@ -1067,7 +1093,9 @@ textarea {
               align-items: center;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
-              order: 2; } }
+              order: 2; }
+    .contact__text {
+      text-align: center; } }
 
 * {
   -webkit-box-sizing: border-box;
