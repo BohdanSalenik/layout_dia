@@ -255,7 +255,7 @@ textarea {
     width: auto;
     padding-top: 30px; }
     .epigraph__title {
-      font-size: 50px; } }
+      font-size: 40px; } }
 
 .button {
   padding: 13px 69px;
@@ -269,7 +269,7 @@ textarea {
   line-height: 22px; }
   .button--contact {
     width: 226px; }
-  .button:hover {
+  .button:hover, .button:focus {
     -webkit-box-shadow: 0 0 15px aqua, inset 0 1px 8px -2px #fff;
             box-shadow: 0 0 15px aqua, inset 0 1px 8px -2px #fff; }
 
@@ -310,7 +310,7 @@ textarea {
     .slider__button--right {
       background-image: url(../images/slider/arrow-right.svg);
       margin-right: 0; }
-    .slider__button:hover {
+    .slider__button:hover, .slider__button:focus {
       -webkit-box-shadow: 0 0 15px #fff, inset 0 1px 8px -2px #fff;
               box-shadow: 0 0 15px #fff, inset 0 1px 8px -2px #fff; }
   .slider__description {
@@ -349,7 +349,9 @@ textarea {
 @media screen and (max-width: 960px) {
   .greeting {
     padding: 30px 20px;
-    margin: 0; } }
+    margin: 0; }
+    .greeting__text {
+      font-size: 18px; } }
 
 .what-do {
   display: grid;
@@ -416,6 +418,12 @@ textarea {
     margin-bottom: 24px; }
   .heading--contact {
     color: #fff; }
+
+@media screen and (max-width: 960px) {
+  .heading {
+    font-size: 40px; }
+    .heading--what-do {
+      font-size: 20px; } }
 
 .section {
   padding: 0 20px;
@@ -539,7 +547,8 @@ textarea {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative; }
   .boxes__button {
     width: 40px;
     height: 40px;
@@ -555,6 +564,9 @@ textarea {
       background-color: #15d850; }
     .boxes__button--red {
       background-color: #f36363; }
+    .boxes__button:hover, .boxes__button:focus {
+      -webkit-box-shadow: 0 0 15px aqua, inset 0 1px 8px -2px #fff;
+              box-shadow: 0 0 15px aqua, inset 0 1px 8px -2px #fff; }
   .boxes__link {
     color: #334563;
     font-size: 15px;
@@ -568,6 +580,18 @@ textarea {
   .boxes__item:nth-child(3) {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+
+@-webkit-keyframes opacityTo_1 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes opacityTo_1 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .features {
   display: -webkit-box;
