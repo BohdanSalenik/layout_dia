@@ -266,7 +266,11 @@ textarea {
   color: #fff;
   font-weight: 600;
   font-family: inherit;
-  line-height: 22px; }
+  line-height: 22px;
+  -webkit-transition: -webkit-box-shadow 0.2s linear;
+  transition: -webkit-box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear; }
   .button--contact {
     width: 226px; }
   .button:hover, .button:focus {
@@ -306,7 +310,11 @@ textarea {
     background-repeat: no-repeat;
     border-radius: 50%;
     border: none;
-    margin-right: 8px; }
+    margin-right: 8px;
+    -webkit-transition: -webkit-box-shadow 0.2s linear;
+    transition: -webkit-box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear; }
     .slider__button--right {
       background-image: url(../images/slider/arrow-right.svg);
       margin-right: 0; }
@@ -557,7 +565,11 @@ textarea {
     background-image: url(../images/slider/long-arrow-right.svg);
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 16px; }
+    margin-right: 16px;
+    -webkit-transition: -webkit-box-shadow 0.2s linear;
+    transition: -webkit-box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear; }
     .boxes__button:hover, .boxes__button:focus {
       -webkit-box-shadow: 0 0 15px #56ccf2, inset 0 1px 8px -2px #fff;
               box-shadow: 0 0 15px #56ccf2, inset 0 1px 8px -2px #fff; }
