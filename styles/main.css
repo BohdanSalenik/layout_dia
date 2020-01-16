@@ -255,9 +255,11 @@ textarea {
     width: auto;
     padding-top: 30px; }
     .epigraph__title {
-      font-size: 40px; } }
+      font-size: 35px;
+      text-align: center; } }
 
 .button {
+  margin: 0 auto;
   padding: 13px 69px;
   border-radius: 64px;
   border: none;
@@ -358,6 +360,9 @@ textarea {
   .greeting {
     padding: 30px 20px;
     margin: 0; }
+    .greeting__title {
+      font-size: 35px;
+      text-align: center; }
     .greeting__text {
       font-size: 18px; } }
 
@@ -429,7 +434,8 @@ textarea {
 
 @media screen and (max-width: 960px) {
   .heading {
-    font-size: 40px; }
+    font-size: 35px;
+    text-align: center; }
     .heading--what-do {
       font-size: 20px; } }
 
@@ -1092,10 +1098,21 @@ textarea {
     margin-right: 45.34px; }
     .contact__img:hover {
       -webkit-filter: drop-shadow(0 -5px 9px aqua);
-              filter: drop-shadow(0 -5px 9px aqua); }
+              filter: drop-shadow(0 -5px 9px aqua);
+      opacity: 0.7; }
   .contact__link {
     text-decoration: none;
     color: inherit; }
+    .contact__link:focus, .contact__link:hover {
+      position: relative; }
+      .contact__link:focus::after, .contact__link:hover::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        margin-top: 8px;
+        width: 100%;
+        background-color: #ff9c8e; }
 
 @media screen and (max-width: 960px) {
   .footer {
@@ -1141,7 +1158,8 @@ textarea {
           -ms-flex-order: 2;
               order: 2; }
     .contact__text {
-      text-align: center; } }
+      text-align: center;
+      font-size: 18px; } }
 
 * {
   -webkit-box-sizing: border-box;
